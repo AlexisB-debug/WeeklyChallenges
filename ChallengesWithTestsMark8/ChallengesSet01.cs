@@ -18,39 +18,55 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            Console.WriteLine("This method subtracts a subtrahend from a minuend.\nPlease, choose the minuend.");
-            double minuend = double.Parse(Console.ReadLine());
-            Console.WriteLine("Please, choose the subtrahend.");
-            double subtrahend = double.Parse(Console.ReadLine());
             double difference = minuend - subtrahend;
             return difference;
-            //Code for the main method
-            //Console.WriteLine($"The difference is {Subtract(7,7)}")
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int sum = number1 + number2;
+            return sum;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            if (number1 < number2)
+            {
+                return number1;
+            }
+            else
+            {
+                return number2;
+            }
+            // I cannot return a string that reads "error" or "same number" when the declared return type of the signature is integer & not string
+            // If I return "0" then that is not proper communication with the user
+            //else if (number1 == number2)
+            //{
+            //    return number1 && number2;
+            //}
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            long product =  factor1 * factor2;
+            return product;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (nameOfPerson == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return $"Hello, {nameOfPerson}!";
+            }
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
         }
     }
 }

@@ -18,7 +18,14 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("This method subtracts a subtrahend from a minuend.\nPlease, choose the minuend.");
+            double minuend = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please, choose the subtrahend.");
+            double subtrahend = double.Parse(Console.ReadLine());
+            double difference = minuend - subtrahend;
+            return difference;
+            //Code for the main method
+            //Console.WriteLine($"The difference is {Subtract(7,7)}")
         }
 
         public int Add(int number1, int number2)

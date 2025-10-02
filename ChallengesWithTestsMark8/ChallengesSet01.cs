@@ -47,18 +47,18 @@ namespace ChallengesWithTestsMark8
         {
             if(nameOfPerson != "")
             {
-                return $"Hello, {nameOfPerson}!";
+                return "Hello!";
             }
             else
             {
-                return "Hello!";
+                return $"Hello, {nameOfPerson}!";
             }
             
         }
 
         public string GetHey()
         {
-            return "HEY!";
+            return "Hey!";
         }
     }
 }

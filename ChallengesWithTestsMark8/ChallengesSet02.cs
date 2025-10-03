@@ -7,27 +7,75 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            string alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+            for (int counter = 0; counter < alphabet.Length; counter++)
+            {
+                if (alphabet[counter] == c)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            throw new NotImplementedException();
+            if (vals.Length % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
+            if (num % 2 == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            throw new NotImplementedException();
+            double minimum = numbers[0];
+            double maximum = numbers[0];
+
+            for (int counter = 1; counter < list.Count - 1; counter++)
+            {
+                double currentNumber = numbers[counter];
+
+                if (currentNumber > maximum)
+                {
+                    maximum = currentNumber;
+                }
+
+                if (currentNumber < minimum)
+                {
+                    minimum = currentNumber;
+                }
+            }
+            double sum = minimum + maximum;
+            return sum;
         }
 
         public int GetLengthOfShortestString(string str1, string str2)

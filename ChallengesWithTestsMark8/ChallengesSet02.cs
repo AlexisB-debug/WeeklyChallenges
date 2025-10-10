@@ -57,35 +57,63 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
+            // if (numbers.Count == 0)
+            // {
+            //     double? sum = null;
+            // }
+
             double minimum = numbers[0];
-            double maximum = numbers[0];
-
-            for (int counter = 1; counter < list.Count - 1; counter++)
+            for (int counter = 1; counter <= numbers.Count - 1; counter = counter + 1)
             {
-                double currentNumber = numbers[counter];
-
-                if (currentNumber > maximum)
+                if (numbers[counter] < minimum)
                 {
-                    maximum = currentNumber;
-                }
-
-                if (currentNumber < minimum)
-                {
-                    minimum = currentNumber;
+                    minimum = numbers[counter];
                 }
             }
+
+            double maximum = numbers[0];
+            for (int counter = 1; counter <= numbers.Count - 1; counter = counter + 1)
+            {
+                if (numbers[counter] > maximum)
+                {
+                    maximum = numbers[counter];
+                }
+            }
+
             double sum = minimum + maximum;
             return sum;
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            throw new NotImplementedException();
+            if (str1.Length < str2.Length)
+            {
+                return str1.Length;
+            }
+            else
+            {
+                return str2.Length;
+            }
         }
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
+            for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
+            {
+                numbers[counter + 1] = numbers[counter] + numbers[counter + 1];
+            }
+
+            for (int counter = 1; counter <= numbers.Length - 1; counter = counter + 1)
+            {
+                numbers[counter] = numbers[counter - 1] + numbers[counter];
+            }
+
+            for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
+            {
+                int i = numbers[counter];
+                int j = numbers[counter + 1];
+                int k == i + j;
+            }
         }
 
         public int SumEvens(int[] numbers)

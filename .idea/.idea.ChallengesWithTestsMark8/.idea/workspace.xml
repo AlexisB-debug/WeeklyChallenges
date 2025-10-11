@@ -8,18 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c74a40e4-7a16-4536-adda-a383e4a47813" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChallengesWithTestsMark8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChallengesWithTestsMark8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net6.0/ChallengesWithTestsMark8.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet02.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet02.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net6.0/ChallengesWithTestsMark8.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +92,7 @@
       <workItem from="1760123432330" duration="9100000" />
       <workItem from="1760198577854" duration="29000" />
       <workItem from="1760200126092" duration="71000" />
-      <workItem from="1760217712226" duration="2365000" />
+      <workItem from="1760217712226" duration="3058000" />
     </task>
     <servers />
   </component>

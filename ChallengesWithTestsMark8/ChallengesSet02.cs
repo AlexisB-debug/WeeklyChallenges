@@ -131,7 +131,21 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            for (int counter = 0; counter <= numbers.Count - 1; counter = counter + 1)
+            {
+                int z = 0;
+                z = z + numbers[counter];
+            }
+
+            bool SumIsOdd;
+            if (z % 2 != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)

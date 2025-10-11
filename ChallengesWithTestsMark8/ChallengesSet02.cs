@@ -156,14 +156,14 @@ namespace ChallengesWithTestsMark8
             }
             else
             {
-                if (number % 2 == 0)
+                if ((number/1) % 2 == 0)
                 {
-                     long x = (number / 2) * 2 - 1;
+                    long x = (number / 2);
                     return x;
                 }
                 else
                 {
-                    long y = (number / 2) * 2 + 1;
+                    long y = (number / 2) + 1;
                     return y;
                 }
             }

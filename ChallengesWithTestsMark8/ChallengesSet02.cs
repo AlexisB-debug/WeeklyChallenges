@@ -150,32 +150,22 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            // int x is the greatest odd positive integer less than number
-            number = Math.Abs(number);
-            
-            //The remainder is an integer and odd numbers are integers
-            
-            if (number % 2 == 0)
+            if (number <= 0)
             {
-                x = (number / 2) * 2 - 1;
+                return 0;
             }
             else
             {
-                x = (number / 2) * 2 + 1;
-            }
-            
-            //Use a for loop to construct a list of all odd numbers below number
-            List<int> oddNumbersBelowLongList = new List<int>();
-            for (int counter = x - 1; counter >= 0; counter = counter - 2)
-            {
-                oddNumbersBelowLongList.Add(x = x -2);
-            }
-            
-            //Then add each number in the list oddNumbersBelowLongList so that numSum = num1 + num2 +num3...
-            //The same problem that values are not stored in a for looop!
-            for (int counter = 1; counter <= OddNumbersBelowLongList.Length - 1; counter = counter + 1)
-            {
-                OddNumbersBelowLongList[counter] = OddNumbersBelowLongList[counter - 1] + OddNumbersBelowLongList[counter];
+                if (number % 2 == 0)
+                {
+                     long x = (number / 2) * 2 - 1;
+                    return x;
+                }
+                else
+                {
+                    long y = (number / 2) * 2 + 1;
+                    return y;
+                }
             }
         }
     }

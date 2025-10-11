@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengesWithTestsMark8
 {
@@ -100,25 +101,32 @@ namespace ChallengesWithTestsMark8
         {
             for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
             {
-                numbers[counter + 1] = numbers[counter] + numbers[counter + 1];
+                int x = 0;
+                x = x + numbers[counter];
             }
-
-            for (int counter = 1; counter <= numbers.Length - 1; counter = counter + 1)
-            {
-                numbers[counter] = numbers[counter - 1] + numbers[counter];
-            }
-
-            for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
-            {
-                int i = numbers[counter];
-                int j = numbers[counter + 1];
-                int k == i + j;
-            }
+            return x;
         }
 
         public int SumEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            List<int> numbersList = numbers.ToList();
+            for (int counter = 0; counter <= numbersList.Count - 1; counter = counter + 1)
+            {
+                int number = numbersList[counter];
+                if (number % 2 != 0)
+                {
+                    numbersList.RemoveAt(counter);
+                }
+            }
+            
+            int[] EvenNumbersArray = numbersList.ToArray();
+            
+            for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
+            {
+                int y = 0;
+                y = y + EvenNumbersArray[counter];
+            }
+            return y;
         }
 
         public bool IsSumOdd(List<int> numbers)

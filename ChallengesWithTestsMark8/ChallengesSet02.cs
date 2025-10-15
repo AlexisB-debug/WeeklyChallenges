@@ -157,22 +157,25 @@ namespace ChallengesWithTestsMark8
             {
                 return 0;
             }
-            else if (number == (number / 1)) //If 'long number' is an integer, then 'number' is not 'below' 'number'
+            else // number > 0
             {
-                long w = number / 2;
-                return w;
-            }
-            else //(0 < (number / 1) < number < (number / 1) + 1)
-            {
-                if ((number/1) % 2 == 0)
+                if (number == (number / 1))//If 'long number' is an integer, then 'number' is not 'below' 'number'
                 {
-                    long x = (number / 1) / 2;
-                    return x;
+                    long w = number / 2;
+                    return w;
                 }
-                else //((number / 1) % 2 != 0)
+                else //(0 < (number / 1) < number < (number / 1) + 1)
                 {
-                    long y = (number / 1) /2 + 1;
-                    return y;
+                    if ((number / 1) % 2 == 0)
+                    {
+                        long x = (number / 1) / 2;
+                        return x;
+                    }
+                    else //((number / 1) % 2 != 0)
+                    {
+                        long y = (number / 1) /2 + 1;
+                        return y;
+                    }
                 }
             }
         }

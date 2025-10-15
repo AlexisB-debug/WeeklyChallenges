@@ -46,7 +46,7 @@ namespace ChallengesWithTestsMark8
 
         public bool IsNumberOdd(int num)
         {
-            if (num % 2 == 1)
+            if (num % 2 != 0)
             {
                 return true;
             }
@@ -58,26 +58,27 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            // if (numbers.Count == 0)
-            // {
-            //     double? sum = null;
-            // }
+            List<double> numbersList = numbers.ToList();
+             if (numbersList.Count == 0)
+             {
+                 throw new ArgumentException("null");
+             }
 
-            double minimum = numbers[0];
-            for (int counter = 1; counter <= numbers.Count - 1; counter = counter + 1)
+            double minimum = numbersList[0];
+            for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
             {
-                if (numbers[counter] < minimum)
+                if (numbersList[counter] < minimum)
                 {
-                    minimum = numbers[counter];
+                    minimum = numbersList[counter];
                 }
             }
 
-            double maximum = numbers[0];
-            for (int counter = 1; counter <= numbers.Count - 1; counter = counter + 1)
+            double maximum = numbersList[0];
+            for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
             {
-                if (numbers[counter] > maximum)
+                if (numbersList[counter] > maximum)
                 {
-                    maximum = numbers[counter];
+                    maximum = numbersList[counter];
                 }
             }
 
@@ -99,9 +100,10 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
+            int x = 0;
             for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
             {
-                int x = 0;
+                //int x = 0;
                 x = x + numbers[counter];
             }
             return x;
@@ -119,25 +121,26 @@ namespace ChallengesWithTestsMark8
                 }
             }
             
-            int[] EvenNumbersArray = numbersList.ToArray();
-            
-            for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
+            int[] evenNumbersArray = numbersList.ToArray();
+            int y = 0;
+            for (int counter = 0; counter <= evenNumbersArray.Length - 1; counter = counter + 1)
             {
-                int y = 0;
-                y = y + EvenNumbersArray[counter];
+                //int y = 0;
+                y = y + evenNumbersArray[counter];
             }
             return y;
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
+            int z = 0;
             for (int counter = 0; counter <= numbers.Count - 1; counter = counter + 1)
             {
-                int z = 0;
+                //int z = 0;
                 z = z + numbers[counter];
             }
 
-            bool SumIsOdd;
+            //bool SumIsOdd;
             if (z % 2 != 0)
             {
                 return true;
@@ -154,14 +157,19 @@ namespace ChallengesWithTestsMark8
             {
                 return 0;
             }
-            else
+            else if (number == (number / 1)) //If 'long number' is an integer, then 'number' is not 'below' 'number'
+            {
+                long w = number / 2;
+                return w;
+            }
+            else //(0 < (number / 1) < number < (number / 1) + 1)
             {
                 if ((number/1) % 2 == 0)
                 {
                     long x = (number / 1) / 2;
                     return x;
                 }
-                else
+                else //((number / 1) % 2 != 0)
                 {
                     long y = (number / 1) /2 + 1;
                     return y;

@@ -154,7 +154,7 @@ namespace ChallengesWithTestsMark8
         public long CountOfPositiveOddsBelowNumber(long number)
         {
             //long cardinality = 0;
-            //The cardinal of elements in a set of odd numbers is an integer; Why is the return type a long?
+            //The cardinal number of elements in a set of odd numbers is an integer; Why is the return type a long?
             if (number <= 0)
             {
                 long cardinality = 0;

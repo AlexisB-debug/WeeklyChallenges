@@ -10,9 +10,9 @@ namespace ChallengesWithTestsMark8
         {
             string alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
-            for (int counter = 0; counter < alphabet.Length; counter++)
+            foreach (char letter in alphabet)
             {
-                if (alphabet[counter] == c)
+                if (letter == c)
                 {
                     return true;
                 }

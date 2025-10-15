@@ -153,31 +153,37 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
+            //long cardinality = 0;
+            //The cardinal of elements in a set of odd numbers is an integer; Why is the return type a long?
             if (number <= 0)
             {
-                return 0;
+                long cardinality = 0;
+                //return cardinality;
             }
             else // number > 0
             {
                 if (number == (number / 1))//If 'long number' is an integer, then 'number' is not 'below' 'number'
                 {
-                    long w = number / 2;
-                    return w;
+                    long cardinality = number / 2;
+                    //return cardinality;
                 }
                 else //(0 < (number / 1) < number < (number / 1) + 1)
                 {
                     if ((number / 1) % 2 == 0)
                     {
-                        long x = (number / 1) / 2;
-                        return x;
+                        long cardinality = (number / 1) / 2;
+                        //return cardinality;
                     }
                     else //((number / 1) % 2 != 0)
                     {
-                        long y = (number / 1) /2 + 1;
-                        return y;
+                        long cardinality = (number / 1) /2 + 1;
+                        //return cardinality;
                     }
                 }
             }
+            //If I return "cardinality" within the if-scope of the if-else statement, then the else is unreachable.
+            //If I return "cardinality outside the if-else statements, then it does not exist.
+            return cardinality;
         }
     }
 }

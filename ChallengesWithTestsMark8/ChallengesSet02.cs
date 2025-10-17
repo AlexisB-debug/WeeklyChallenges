@@ -58,32 +58,48 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            List<double> numbersList = numbers.ToList();
-             if (numbersList.Count == 0)
-             {
-                 throw new ArgumentException("null");
-             }
-
-            double minimum = numbersList[0];
-            for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
+            // List<double> numbersList = numbers.ToList();
+            // if (numbersList == null)
+            // {
+            //     return 0;
+            // }
+            //
+            // if (numbersList.Count() == 0)
+            // {
+            //     return 0;
+            // }
+            //
+            // double minimum = numbersList[0];
+            // for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
+            // {
+            //     if (numbersList[counter] < minimum)
+            //     {
+            //         minimum = numbersList[counter];
+            //     }
+            // }
+            //
+            // double maximum = numbersList[0];
+            // for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
+            // {
+            //     if (numbersList[counter] > maximum)
+            //     {
+            //         maximum = numbersList[counter];
+            //     }
+            // }
+            // double sum = minimum + maximum;
+            // return sum;
+            
+            if (numbers == null)
             {
-                if (numbersList[counter] < minimum)
-                {
-                    minimum = numbersList[counter];
-                }
+                return 0;
             }
-
-            double maximum = numbersList[0];
-            for (int counter = 1; counter <= numbersList.Count - 1; counter = counter + 1)
+            
+            if (numbers.Count() == 0)
             {
-                if (numbersList[counter] > maximum)
-                {
-                    maximum = numbersList[counter];
-                }
+                return 0;
             }
-
-            double sum = minimum + maximum;
-            return sum;
+            
+            return numbers.Min() + numbers.Max();
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
@@ -100,18 +116,29 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
-            int x = 0;
+            if (numbers == null)
+            {
+                return 0;
+            }
+
+            int sum = 0;
             for (int counter = 0; counter <= numbers.Length - 1; counter = counter + 1)
             {
                 //int x = 0;
-                x = x + numbers[counter];
+                sum = sum + numbers[counter];
             }
-            return x;
+            return sum;
         }
 
         public int SumEvens(int[] numbers)
         {
+            if (numbers == null)
+            {
+                return 0;
+            }
+
             List<int> numbersList = numbers.ToList();
+
             for (int counter = 0; counter <= numbersList.Count - 1; counter = counter + 1)
             {
                 int number = numbersList[counter];
@@ -122,6 +149,12 @@ namespace ChallengesWithTestsMark8
             }
             
             int[] evenNumbersArray = numbersList.ToArray();
+
+            if (evenNumbersArray.Length == 1)
+            {
+                return evenNumbersArray[0];
+            }
+
             int y = 0;
             for (int counter = 0; counter <= evenNumbersArray.Length - 1; counter = counter + 1)
             {
@@ -133,6 +166,11 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOdd(List<int> numbers)
         {
+            if (numbers == null)
+            {
+                return false;
+            }
+
             int z = 0;
             for (int counter = 0; counter <= numbers.Count - 1; counter = counter + 1)
             {
@@ -158,31 +196,25 @@ namespace ChallengesWithTestsMark8
             if (number <= 0)
             {
                 cardinality = 0;
-                //return cardinality;
             }
             else // number > 0
             {
                 if (number == (number / 1))//If 'long number' is an integer, then 'number' is not 'below' 'number'
                 {
                     cardinality = number / 2;
-                    //return cardinality;
                 }
                 else //(0 < (number / 1) < number < (number / 1) + 1)
                 {
                     if ((number / 1) % 2 == 0)
                     {
                         cardinality = (number / 1) / 2;
-                        //return cardinality;
                     }
                     else //((number / 1) % 2 != 0)
                     {
-                        cardinality = (number / 1) /2 + 1;
-                        //return cardinality;
+                        cardinality = (number / 1) / 2 + 1;
                     }
                 }
             }
-            //If I return "cardinality" within the if-scope of the if-else statement, then the else is unreachable.
-            //If I return "cardinality outside the if-else statements, then it does not exist.
             return cardinality;
         }
     }

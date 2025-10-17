@@ -137,31 +137,41 @@ namespace ChallengesWithTestsMark8
                 return 0;
             }
 
-            List<int> numbersList = numbers.ToList();
+            // List<int> numbersList = numbers.ToList();
+            //
+            // for (int counter = 0; counter <= numbersList.Count - 1; counter = counter + 1)
+            // {
+            //     int number = numbersList[counter];
+            //     if (number % 2 != 0)
+            //     {
+            //         numbersList.RemoveAt(counter);
+            //         counter--; //counter = counter - 1
+            //     }
+            // }
+            //
+            // int[] evenNumbersArray = numbersList.ToArray();
+            //
+            // if (evenNumbersArray.Length == 1)
+            // {
+            //     return evenNumbersArray[0];
+            // }
+            //
+            // int y = 0;
+            // for (int counter = 0; counter <= evenNumbersArray.Length - 1; counter = counter + 1)
+            // {
+            //     y = y + evenNumbersArray[counter];
+            // }
+            // return y;
 
-            for (int counter = 0; counter <= numbersList.Count - 1; counter = counter + 1)
+            var evenNumber = 0;
+            foreach (var number in numbers)
             {
-                int number = numbersList[counter];
-                if (number % 2 != 0)
+                if (number % 2 == 0)
                 {
-                    numbersList.RemoveAt(counter);
+                    evenNumber += number; // evenNumber = evenNumber + number
                 }
             }
-            
-            int[] evenNumbersArray = numbersList.ToArray();
-
-            if (evenNumbersArray.Length == 1)
-            {
-                return evenNumbersArray[0];
-            }
-
-            int y = 0;
-            for (int counter = 0; counter <= evenNumbersArray.Length - 1; counter = counter + 1)
-            {
-                //int y = 0;
-                y = y + evenNumbersArray[counter];
-            }
-            return y;
+            return evenNumber;
         }
 
         public bool IsSumOdd(List<int> numbers)

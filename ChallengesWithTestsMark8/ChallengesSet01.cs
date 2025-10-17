@@ -38,13 +38,6 @@ namespace ChallengesWithTestsMark8
             {
                 return number2;
             }
-            //The method signature cannot read "public 'int || string' GetSmallestNumber" 
-            // I cannot return a string that reads "error" or "same number" when the return type of the signature is integer
-            // If I return "0" then that is not proper communication with the user
-            //else if (number1 == number2)
-            //{
-            //    return number1 && number2;
-            //}
         }
 
         public long Multiply(long factor1, long factor2)

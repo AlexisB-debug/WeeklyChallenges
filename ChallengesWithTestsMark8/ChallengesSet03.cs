@@ -53,36 +53,6 @@ namespace ChallengesWithTestsMark8
             return false;
         }
 
-        public char GetFirstLetterOfString(string val)
-        {
-            throw new NotImplementedException();
-        }
-
-        public char GetLastLetterOfString(string val)
-        {
-            throw new NotImplementedException();
-        }
-
-        public decimal Divide(decimal dividend, decimal divisor)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int LastMinusFirst(int[] nums)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int[] GetOddsBelow100()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ChangeAllElementsToUppercase(string[] words)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool PasswordContainsUpper(string password)
         {
             List<char> uppers = new List<char>()
@@ -130,5 +100,57 @@ namespace ChallengesWithTestsMark8
             }
             return false;
         }
+        public char GetFirstLetterOfString(string val)
+        {
+            char[] valArray = val.ToCharArray();
+            List<char> valChars = new List<char>(valArray);
+
+            for (int counter = valChars.Count - 1; valChars.Count > 1; counter = counter - 1)
+            {
+                valChars.RemoveAt(counter);
+            }
+            
+            char[] redactedValArray = valChars.ToArray();
+            string redactedValsString = new string(redactedValArray);
+            char firstLetter = Convert.ToChar(redactedValsString);
+            return firstLetter;
+        }
+        public char GetLastLetterOfString(string val)
+        {
+            char[] valArray = val.ToCharArray();
+            List<char> valChars = new List<char>(valArray);
+
+            for (int counter = 0; counter < valChars.Count - 1; counter = counter + 1)
+            {
+                valChars.RemoveAt(counter);
+                counter = counter - 1;
+            }
+            
+            char[] redactedValArray = valChars.ToArray();
+            string redactedValsString = new string(redactedValArray);
+            char lastLetter = Convert.ToChar(redactedValsString);
+            return lastLetter;
+        }
+
+        public decimal Divide(decimal dividend, decimal divisor)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int LastMinusFirst(int[] nums)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int[] GetOddsBelow100()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ChangeAllElementsToUppercase(string[] words)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

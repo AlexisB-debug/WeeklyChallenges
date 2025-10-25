@@ -134,23 +134,42 @@ namespace ChallengesWithTestsMark8
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            throw new NotImplementedException();
+            if (divisor == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                decimal result = dividend / divisor;
+                return result;
+            }
         }
 
         public int LastMinusFirst(int[] nums)
         {
-            throw new NotImplementedException();
+            int lastMinusFirst = nums[nums.Length - 1] - nums[0];
+            return lastMinusFirst;
         }
 
         public int[] GetOddsBelow100()
         {
-            throw new NotImplementedException();
+            int[] oddsBelow = new int[50];
+            
+            for (int counter = 0; counter <= oddsBelow.Length - 1; counter = counter + 1)
+            {
+                int evenElement = 2 * counter + 2;
+                int oddElement = evenElement - 1;
+                oddsBelow[counter] = oddElement;
+            }
+            return oddsBelow;
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            throw new NotImplementedException();
+            for (int counter = 0; counter <= words.Length - 1; counter = counter + 1)
+            {
+                words[counter] = words[counter].ToUpper();
+            }
         }
-
     }
 }

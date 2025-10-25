@@ -22,9 +22,7 @@
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ChallengesWithTestsMark8.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ChallengesWithTestsMark8.Tests.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet01.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet01.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet02.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet02.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet03.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet03.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.pdb" afterDir="false" />
@@ -36,7 +34,6 @@
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,11 @@
       <workItem from="1760650682421" duration="8127000" />
       <workItem from="1760659758186" duration="1634000" />
       <workItem from="1760712819526" duration="1420000" />
-      <workItem from="1760723339096" duration="189000" />
+      <workItem from="1760723339096" duration="404000" />
+      <workItem from="1761082022738" duration="166000" />
+      <workItem from="1761171520148" duration="4000" />
+      <workItem from="1761187395627" duration="4000" />
+      <workItem from="1761351490303" duration="7962000" />
     </task>
     <servers />
   </component>

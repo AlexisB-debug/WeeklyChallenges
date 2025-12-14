@@ -103,7 +103,6 @@ namespace ChallengesWithTestsMark8
                 // throw new NullReferenceException();
                 return [];
             }
-
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
@@ -119,6 +118,7 @@ namespace ChallengesWithTestsMark8
                     }
                 }
             }
+
             return false;
         }
     }

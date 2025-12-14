@@ -22,7 +22,8 @@
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ChallengesWithTestsMark8.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ChallengesWithTestsMark8.Tests.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/ref/ChallengesWithTestsMark8.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8.Tests/obj/Debug/net9.0/refint/ChallengesWithTestsMark8.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet04.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet04.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet05.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet05.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet06.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/ChallengesSet06.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengesWithTestsMark8/bin/Debug/net9.0/ChallengesWithTestsMark8.pdb" afterDir="false" />
@@ -132,7 +133,9 @@
       <workItem from="1761187395627" duration="4000" />
       <workItem from="1761351490303" duration="16813000" />
       <workItem from="1762575448758" duration="434000" />
-      <workItem from="1763348855550" duration="7902000" />
+      <workItem from="1763348855550" duration="8085000" />
+      <workItem from="1764347911609" duration="31887000" />
+      <workItem from="1765730203577" duration="8684000" />
     </task>
     <servers />
   </component>
